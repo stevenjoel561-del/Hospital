@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/pages/3063176.png">
+    <title>Formulario</title>
+</head>
+<body>
+       <header>
+<h2 style="text-align: center; color: brown;"> Hospital de sangolqui</h2>
+<p style="text-align: center; font-size: 20px;"> Bienvenidos pacientes </p>    
+    </header>
+    <img src="hospital.avif" width="200">
+    <!--Formulario web-->
+    <h1>Registro de pacientes</h1>
+    <hr>
+    <form action="">
+        <label for="nombre">1. Nombre del Paciente:</label>
+    <br>
+        <input type="text"id="nombre"placeholder="Escribir tu Nombre">
+    <br>
+    <label for="apellido">2. Apellidos del Paciente:</label>
+    <br>
+    <input type="text" id="apellido"placeholder="Escribir tu Apellido">
+    <br>
+    <label for="telefono"> 3. Numero de telefono</label>
+    <br>
+    <input type="tel" id="telefono" placeholder="Escribir el numero de telefono">
+    <br>
+    <label for="email">4. Correo Electronico:</label>
+    <br>
+    <input type="email" id="email" placeholder="Escribir tu email"> 
+    <br>
+    <label for="nombre_Acompañante">5. Nombre del acompañante del paciente:</label>
+    <br>
+    <input type="text"id="nombre"placeholder="Escribir el Nombre del Acompaniente">
+    <br>
+    <label for="edad">6. Edad del Paciente:</label>
+    <br>
+    <input type="number" id="edad" placeholder="Escribir la edad">
+    <br>
+    <label for="fecha">7. Fecha de Nacimiento del paciente</label>
+    <br>
+    <input type="date" id="Fecha_nacimiento" placeholder="Escribir la fecha de nacimiento Estimada">
+    <br>
+    <label for="Especialidad">8. Especialidad Asignada:</label>
+    <br>    
+    <select id="Especialidad" name="Especialidad" required>
+        <option value="opcion" disabled selected>Seleccionar opcion</option>
+        <option value="pediatria">Pediatria</option>
+        <option value="urologia">Urologia</option>
+        <option value="cardiologia">Cardiologia</option>
+        <option value="odontologia">Odontologia</option>
+
+    </select>
+                    
+
+    <br>
+    <label for="Genero">9. Genero del Paciente:</label>
+    <br>
+    <input type="radio" value="Masculino" required> Hombre</label>
+    <input type="radio" value="Femenino" required> Mujer</label>
+    <input type="radio" value="Otro" required>Otro</label>
+    <br>
+    <label for="alergias">10. Alergias algun Medicamento:</label>
+    <br>            
+    <input type="text" id="alergias" placeholder="Alergias algun medicamento">
+    <br>
+    <label for="hora_comida">11. Horario Principal de Alimentación:</label>
+    <br>            
+    <input type="time" id="hora_comida" name="hora_comida" required>
+    <br>
+<label>12. Tipo de dieta:</label>
+<br>        
+           <select name="Dieta" id="Dieta">
+                <option value="Carbohidratos"> Carbohidratos>
+                <option value="Proteina"> Proteina>
+                <option value="medicamentos"> Medicamentos>
+                <br>
+                </select>
+                <br>
+                <label for="pin">13. Código PIN de Seguridad del Paciente:</label>
+                <br>
+                <input type="password" id="pin" maxlength="6" placeholder="******" required>
+            <br>
+            <label for="observaciones">14. Observaciones Médicas y de Comportamiento:</label>
+            <br>
+                <textarea id="observaciones" rows="3" placeholder="Detalles sobre vacunas, alergias o conducta..."></textarea>
+                <br>
+            <label for="foto">15. Fotografía de Identificación:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <br>
+                <img src="paciente.png" width="200" alt="Jaguar">
+                <br>
+    <!--botones
+                button = botón simple, sin una funcionalidad
+                submit = botón que envia datos (DB)
+                reset = limpia el formulario
+                -->
+                <br><br>
+                <button>Botón simple</button>
+                <br>
+                <input type="submit" value="Enviar">
+                <br>
+                <button type="reset">Limpiar</button>
+    </form>
+    <p>
+        <hr>
+    </main>
+        <footer>
+            <p>Autor: Steeven Padilla</p>
+        </footer>
+        <audio src="Daniel Caesar - Superpowers (Official Audio).mp3" autoplay loop></audio>
+</body>
+</html>

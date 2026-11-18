@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="/zoologico.png">
+    <title>Home</title>
+</head>
+<body>
+     <header>
+<h2 style="text-align: center; color: brown;"> Zoologico Mundo Nuevo</h2>
+<p style="text-align: center; font-size: 20px;"> Bienvenidos a un nuevo mundo</p>    
+    </header>
+<hr>
+<nav>
+<a href="index.html">Home</a>
+<a href="https://wiwaquito.org/" target="_blank">Pagina oficial</a>
+<a href="/pages/galeria.html">Galería</a>
+<a href="">Acerca</a>
+<a href="">Contacto</a>
+</nav>
+<hr>
+<!--Formulario de registro-->
+<form action="#">
+<label for="Nombre">Ingresa tu nombre</label>
+<br>
+<input type="text" id="Nombre" placeholder="nombre" size="10" required>
+<br><br>
+<label for="Email">Ingresa tu email</label>
+<br>
+<input type="email" id="Email" placeholder="email" required>
+<br><br>
+<label for="Passw">Ingrese su contraseña</label>
+<br>
+<input type="password" id="Passw" placeholder="contraseña" required>
+<br><br>
+<label for="fecha_nacimiento"> Ingresa tu fecha de nacimiento:</label>
+    <br>
+    <input type="date" id="fecha_nacimiento" required>
+    <br><br>
+    <label for="cargas_familiares"></label>Cargas familiares
+    <br>
+    <input type="number" id="cargas_familiares">
+    <br><br>
+    <label for="#">Genero
+        <br><br>
+    <label></label><input type="radio" name="sexo" value="Masculino" required> Masculino</label>
+    <label>><input type="radio" name="sexo" value="Femenino" required>Femenino</label>
+    <label><input type="radio" name="sexo" value="Otro" required>Otro</label>
+    </label>
+    <br><br>
+    <label for="ciudad">Seleccione su ciudad</label>
+    <select name="ciudad" id="ciudad">
+        <option value="opcion" disabled selected>Seleccionar opcion</option>
+        <option value="quito">Quito</option>
+        <option value="cuenca">Cuenca</option>
+        <option value="guayaquil">Guayaquil</option>
+        <option value="latacunga">Latacunga</option>
+    </select>
+    <br><br>
+    <label for="foto">Fotografía</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <br>
+                <label for="comentarios">Deje sus comentarios</label>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escriba su comentario"></textarea>
+                <br><br>
+                <!--botones
+                button = botón simple, sin una funcionalidad
+                submit = botón que envia datos (DB)
+                reset = limpia el formulario
+                -->
+                <br><br>
+                <button>Botón simple</button>
+                <br>
+                <input type="submit" value="Enviar">
+                <br>
+                <button type="reset">Limpiar</button>
+
+</body>
+</html>
